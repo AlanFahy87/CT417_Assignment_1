@@ -1,0 +1,13 @@
+## YAML Template.
+---
+language: java
+jdk:
+- openjdk7
+after_success:
+- mvn clean cobertura:cobertura
+- mvn test
+notifications:
+email:
+recipients:
+- alanfahy87@gmail.com
+- alanfahy87@gmail.com
