@@ -4,7 +4,7 @@ language: java
 jdk:
 - openjdk8
 after_success:
-- mvn clean cobertura:cobertura
+- mvn clean
 - mvn test
 notifications:
 email:
